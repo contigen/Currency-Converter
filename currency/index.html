@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muhammed Tijani" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <title>Currency Converter</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        outline: none;
+      }
+      *:focus {
+        outline: none;
+      }
+      h2 {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      html {
+        font-family: Montserrat;
+      }
+      div.container {
+        background-color: #9b0a18;
+        border: 1px solid transparent;
+        border-radius: 40px;
+        display: inline-block;
+        margin: 50px;
+      }
+      p {
+        padding: 10px 100px 10px 100px;
+        font-weight: bold;
+        color: white;
+      }
+      div.container1 {
+        background-color: #006b45;
+        border: 1px solid transparent;
+        border-radius: 40px;
+        display: inline-block;
+        margin: 50px;
+      }
+      input {
+        border: 2px solid grey;
+        padding: 20px;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; color: #321b88">Currency Converter</h2>
+    <div class="container"><p>USD 1.00</p></div>
+    <div class="container1"><p>NGN 380.5</p></div>
+    <br />
+    <label>NGN:</label>
+    <input
+      type="number"
+      oninput="converter(this.value)"
+      placeholder="0"
+      id="naira"
+    /><br />
+    <label>USD:</label>
+    <input
+      type="number"
+      id="usd"
+      placeholder="0"
+      oninput="fromDollar(this.value)"
+    /><br />
+    <label>EUR:</label>
+    <input
+      type="number"
+      id="eur"
+      placeholder="0"
+      oninput="fromEuro(this.value)"
+    /><br />
+    <label>JPY:</label>
+    <input
+      type="number"
+      id="jpy"
+      placeholder="0"
+      oninput="fromYen(this.value)"
+    /><br />
+    <label>GBP:</label>
+    <input
+      type="number"
+      id="gbp"
+      placeholder="0"
+      oninput="fromPounds(this.value)"
+    /><br />
+    <label>CHF:</label>
+    <input
+      type="number"
+      id="chf"
+      placeholder="0"
+      oninput="fromFranc(this.value)"
+    /><br />
+    <label>CAD:</label>
+    <input
+      type="number"
+      id="cad"
+      placeholder="0"
+      oninput="fromCad(this.value)"
+    /><br />
+    <label>ZAR:</label>
+    <input
+      type="number"
+      id="zar"
+      placeholder="0"
+      oninput="fromZar(this.value)"
+    /><br />
+    <label>AED:</label>
+    <input
+      type="number"
+      id="aed"
+      placeholder="0"
+      oninput="fromAed(this.value)"
+    /><br />
+    <label>KWD:</label>
+    <input
+      type="number"
+      id="kwd"
+      placeholder="0"
+      oninput="fromDinar(this.value)"
+    /><br />
+    <label>CNY:</label>
+    <input
+      type="number"
+      id="cny"
+      placeholder="0"
+      oninput="fromYuan(this.value)"
+    /><br />
+
+    <script src="./index.js"></script>
+  </body>
+</html>
